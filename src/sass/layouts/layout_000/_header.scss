@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: rem(55px) 0 rem(55px);
+    &__logo {
+        padding: 0 rem(15px);
+        margin-bottom: rem(35px);
+    }
+    &__title {
+        font-size: rem(24px);
+        font-weight: 700;
+        color: $black;
+        text-align: center;
+        padding: 0 rem(15px);
+        margin-bottom: rem(5px);
+    }
+}

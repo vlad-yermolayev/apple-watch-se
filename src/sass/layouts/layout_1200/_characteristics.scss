@@ -1,0 +1,33 @@
+.characteristics {
+    padding: rem(140px) 0;
+    &__title {
+        font-size: rem(71px);
+        margin-bottom: rem(100px);
+    }
+    &__list {
+        max-width: rem(800px);
+        max-height: rem(900px);
+        flex-wrap: wrap;
+        padding: 0;
+        align-content: space-between;
+        & li {
+            font-size: rem(25px);
+            max-width: 40%;
+            &:not(:last-child) {
+                margin-bottom: rem(45px);
+                &>span {
+                    margin-bottom: rem(45px);
+                }
+            }
+            &:nth-of-type(5) {
+                margin-bottom: 0;
+                &::after {
+                    content: none;
+                }
+                &>span {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

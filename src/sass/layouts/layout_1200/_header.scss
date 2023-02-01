@@ -1,0 +1,13 @@
+.header {
+    padding: rem(110px) 0 rem(110px);
+    &__logo {
+        margin-bottom: rem(65px);
+    }
+    &__title {
+        font-size: rem(71px);
+        margin-bottom: rem(90px);
+    }
+    &__preview {
+        max-width: 700px;
+    }
+}

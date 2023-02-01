@@ -1,0 +1,107 @@
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    &__title {
+        font-size: rem(24px);
+        font-weight: 700;
+        color: $black;
+        text-align: center;
+        padding: 0 rem(15px);
+        margin-bottom: rem(30px);
+    }
+    &__promo {
+        width: 100%;
+        background-color: $lightGray;
+        margin-bottom: rem(90px);
+    }
+    &__list {
+        width: 100%;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        &:not(:last-child) {
+            margin-bottom: rem(10px);
+        }
+        &>span {
+            font-size: rem(24px);
+            font-weight: 700;
+            color: $black;
+            text-align: center;
+            padding: 0 rem(15px);
+            margin-bottom: rem(35px);
+        }
+        .grid {
+            min-width: 100%;
+            display: grid;
+            gap: rem(20px);
+            li {
+                min-height: rem(350px);
+                display: flex;
+                flex-direction: column;
+                font-size: rem(28px);
+                font-weight: 700;
+                color: $black;
+                background-color: $lightGray;
+                &:nth-of-type(1) {
+                    justify-content: center;
+                    align-items: center;
+                    &::before {
+                        content: url('../img/bg-2.png');
+                        margin-bottom: rem(25px);
+                    }
+                    &>span {
+                        text-align: center;
+                        padding: 0 rem(15px);
+                    }
+                }
+                &:nth-of-type(2) {
+                    position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    background-image: url('../img/bg-1.png');
+                    background-repeat: no-repeat;
+                    background-position: bottom right;
+                    background-size: contain;
+                    &>span {
+                        text-align: center;
+                        padding: 0 rem(15px);
+                    }
+                }
+                &:nth-of-type(3) {
+                    justify-content: center;
+                    align-items: center;
+                    &::before {
+                        content: url('../img/bg-3.png');
+                        margin-bottom: rem(25px);
+                    }
+                    &>span {
+                        text-align: center;
+                        padding: 0 rem(15px);
+                    }
+                }
+                &:nth-of-type(4) {
+                    min-height: rem(200px);
+                    justify-content: center;
+                    align-items: center;
+                    &>b {
+                        font-size: rem(34px);
+                        font-weight: 700;
+                        color: $green;
+                        text-align: center;
+                        padding: 0 rem(15px);
+                        margin-bottom: rem(10px);
+                    }
+                    &>span {
+                        text-align: center;
+                        padding: 0 rem(15px);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.equipment {
+    .grid {
+        min-width: 100%;
+        display: grid;
+        gap: rem(20px);
+        li {
+            min-height: rem(350px);
+            display: flex;
+            flex-direction: column;
+            font-size: rem(28px);
+            font-weight: 700;
+            color: $black;
+            text-align: center;
+            background-color: $lightGray;
+            &:nth-of-type(1) {
+                justify-content: center;
+                align-items: center;
+                padding: rem(40px) 0;
+                &>span {
+                    text-align: center;
+                    padding: 0 rem(15px);
+                    margin-bottom: rem(30px);
+                }
+            }
+            &:nth-of-type(2) {
+                justify-content: center;
+                align-items: center;
+                padding: rem(20px) 0;
+                &>span {
+                    text-align: center;
+                    padding: 0 rem(15px);
+                    margin-bottom: rem(30px);
+                }
+                &>img{
+                    width: 100%;
+                }
+            }
+            &:nth-of-type(3) {
+                justify-content: center;
+                align-items: center;
+                padding: rem(20px) 0 0;
+                &>span {
+                    text-align: center;
+                    padding: 0 rem(15px);
+                    margin-bottom: rem(30px);
+                }
+            }
+        }
+    }
+}

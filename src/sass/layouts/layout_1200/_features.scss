@@ -1,0 +1,45 @@
+.features {
+    &__title {
+        font-size: rem(71px);
+        margin-bottom: rem(140px);
+    }
+    &__promo {
+        margin-bottom: rem(180px);
+    }
+    &__item {
+        &>span {
+            font-size: rem(71px);
+            margin-bottom: rem(70px);
+        }
+        &>img {
+            max-width: rem(930px);
+        }
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            li {
+                font-size: rem(38px);
+                &:nth-of-type(1) {
+                    grid-row: span 2;
+                }
+                &:nth-of-type(2) {
+                    grid-row: span 3;
+                    &>span {
+                        position: absolute;
+                        top: rem(80px);
+                        left: rem(80px);
+                    }
+                }
+                &:nth-of-type(3) {
+                    grid-row: span 2;
+                }
+                &:nth-of-type(4) {
+                    grid-row: span 1;
+                    &>b {
+                        font-size: rem(71px);
+                    }
+                }
+            }
+        }
+    }
+}

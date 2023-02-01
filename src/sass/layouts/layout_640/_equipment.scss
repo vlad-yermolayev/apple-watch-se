@@ -1,0 +1,30 @@
+.equipment {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        li {
+            font-size: rem(30px);
+            &:nth-of-type(1) {
+                grid-row: span 2;
+                &>span {
+                    margin-bottom: rem(100px);
+                }
+            }
+            &:nth-of-type(2) {
+                grid-row: span 1;
+                &>span {
+                    margin-bottom: rem(60px);
+                }
+                &>img{
+                    width: 100%;
+                }
+            }
+            &:nth-of-type(3) {
+                grid-row: span 1;
+                &>span {
+                    margin-bottom: rem(30px);
+                }
+            }
+        }
+    }
+}
