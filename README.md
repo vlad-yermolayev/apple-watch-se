@@ -5,7 +5,7 @@ Landing page for Apple Watch SE.
 ___
 
 #### :link: Live Demo: 
-[Apple Watch SE](https://vlad-yermolayev.github.io/random-color-palette-generator/)
+[Apple Watch SE](https://vlad-yermolayev.github.io/apple-watch-se/dist/)
 ___
 
 #### :rocket: Technologies Used
